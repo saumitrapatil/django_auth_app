@@ -1,0 +1,14 @@
+<html></html>
+
+<body>
+    <h3>Change Password</h3>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Change Password</button>
+    </form>
+    <a href="{% url 'profile' %}">Back To Profile</a><br>
+
+</body>
+
+</html>

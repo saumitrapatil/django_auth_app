@@ -1,0 +1,17 @@
+<html>
+
+<head>
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <p>Dashboard</p>
+    <p>Welcome, {{ user.username }}</p>
+    <input type="button" value="Profile" onclick="window.location.href='{% url 'profile' %}'">
+    <form style="display: inline;" action="{% url 'logout' %}" method="post">
+        {% csrf_token %}
+        <button type="submit">Log Out</button>
+    </form>
+</body>
+
+</html>

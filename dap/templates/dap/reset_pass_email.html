@@ -1,0 +1,7 @@
+{% autoescape off %}
+    Password reset link:
+    {{ protocol }}://{{ domain }}{% url 'password_confirm' uidb64=uid token=token %}
+
+    If clicking the link above doesn't work, please copy and paste the URL in a new browser
+    window instead.
+{% endautoescape %}

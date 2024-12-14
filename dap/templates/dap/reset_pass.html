@@ -1,0 +1,15 @@
+<html>
+
+<body>
+    <h3>Forgot Password?</h3>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Send Reset Link</button>
+    </form>
+    <a href="{% url 'signup' %}">Create A New Account</a></br>
+    <a href="{% url 'login' %}">Back To Login</a><br>
+
+</body>
+
+</html>

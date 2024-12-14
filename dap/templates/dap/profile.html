@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    <title>Profile</title>
+</head>
+
+<body>
+    <p>Profile</p>
+    <p>Username: {{ user.username }}</p>
+    <p>Email: {{ user.email }}</p>
+    <p>Date Joined: {{ user.date_joined }}</p>
+    <p>Last Updated: {{ user.last_updated }}</p>
+    <input type="button" value="Dashboard" onclick="window.location.href='{% url 'dashboard' %}'">
+    <input type="button" value="Change Password" onclick="window.location.href='{% url 'change-password' %}'">
+    <form style="display: inline;" action="{% url 'logout' %}" method="post">
+        {% csrf_token %}
+        <button type="submit">Log Out</button>
+    </form>
+</body>
+
+</html>
