@@ -72,4 +72,4 @@ URL Path | View | Description
 `/password-confirm/<uidb64>/<token>/` | PasswordResetConfirmView | Allows users to confirm password reset.
 
 ## Security Notes
-- Protect sensitive data (like EMAIL_HOST_PASSWORD) by using environment variables.
+- Protect sensitive data (like EMAIL_HOST_USER and EMAIL_HOST_PASSWORD) by using environment variables.
