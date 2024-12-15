@@ -45,14 +45,34 @@ This documentation provides an overview and instructions for a Django-based auth
 ## Project Structure
 ```
 django_auth_app/
-├── auth_app/
+├── dap/
+│   ├── templates/
+│   │   └── dap/
+│   │      ├── change_pass.html
+│   │      ├── dashboard.html
+│   │      ├── index.html
+│   │      ├── login.html
+│   │      ├── password_confirm.html
+│   │      ├── profile.html
+│   │      ├── register.html
+│   │      ├── reset_pass_email.html
+│   │      ├── reset_pass_subject.html
+│   │      └── reset_pass.html
 │   ├── __init__.py
 │   ├── admin.py
 │   ├── apps.py
+│   ├── backend.py
+│   ├── forms.py
 │   ├── models.py
 │   ├── tests.py
 │   ├── urls.py
 │   └── views.py
+├── django_auth_app/
+│   ├── __init__.py
+│   ├── asgi.py
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
 ├── manage.py
 ├── requirements.txt
 └── README.md
